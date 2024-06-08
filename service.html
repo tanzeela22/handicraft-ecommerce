@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handicraftyy.com |services</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/3363981bcc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="E-COMMERCE.html"><img src="image/image1.png" width="150"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="">Login/Register</a>
+            </div>
+        </nav>
+        
+        <div class="product" style="padding-top: 100px;">
+            <h2>Our Products</h2>
+            <div class="product_container" style="padding-bottom: 50px;">
+
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/image3.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3><B>POTTERY</B></h3>
+                        <p>"Handmade Treasures"<br>
+                        </p>
+                        <a href="">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/image4.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3>CHANNAPATNA TOYS & DOLLS</h3>
+                        <p>"Where Imagination Takes Shape, One Artful Carving at a Time."</p>
+                        <a href="">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/image5.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3>PATACHITRA</h3>
+                        <p> "Brushstrokes of Tradition, Stories Painted on Canvas of Time"</p>
+                        <a href="">SHOP NOW</a>
+                    </div>
+                </div>
+             </div>
+        </div>   
+
+        <div class="feed">
+            <h2>feedback</h2>
+            <div class="feed_form">
+                <form  name="google-sheet"  method="post" >
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Email" placeholder="Email Id"><br>
+                    <input type="number" name="Number" placeholder="Contact Number"><br>
+                    <textarea rows="5" cols="7" name="Feedback" placeholder="write your feedback"></textarea><br>
+                    <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="advance e-commerce.html"><img src="image/image1.png" width="150"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">AboutUs</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="">Login</a>|
+                <a href="">SignUp</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/pages/category/Education-website/Handicraftyy-102490171820303/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/Handicraftyy.ai/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/Handicraftyy-ai/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.fa-whatsapp.com/send?phone=+91 9879456123 " target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="tel:+91 9879456123"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: support@Handicraftyy.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <br>
+
+            <p>Copyright&copy; 2023 Handicraftyy. All rights reserved</p>
+        </footer>
+  
+        <script type="text/javascript">
+            const scriptURL ='https://script.google.com/macros/s/AKfycbypYHDBrPaU8V7N5BQRT35g1PlObIgXh7io5tJBelsfWsk51Un9jWuf2QPGqgqLgMjTrQ/exec'
+              const form = document.forms['submit-googlesheet']
+              
+               form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, {
+                  method: 'POST',
+                   body: new FormData(form)
+                })
+                 .then(response => alert(
+                    "thank you,will get back you soon.."))
+                 .catch(error => console.error('Error!', error.message))
+            })
+
+         </script>
+         
+    </body>
+</html>   
